@@ -39,7 +39,7 @@ export default function MainBar() {
         />
       </div>
       
-      <div className="flex w-full overflow-auto scrollbar-none my-4 text-white  drop-shadow-lg">
+      <div className="flex w-full overflow-auto scrollbar-hide my-4 text-white  drop-shadow-lg">
         <ul className="flex gap-2  pl-2 ">
           <button className="flex bg-gray-400 px-9 py-4 gap-2 rounded-2xl transform transition-transform duration-200 hover:scale-95">
             <span>
@@ -100,7 +100,7 @@ export default function MainBar() {
       </div>
 
       <div className="flex w-full  drop-shadow-2xl overflow-auto">
-        <ul className="grid grid-cols-6 gap-6 sm:grid-cols-4 xs:grid-cols-2">
+        <ul className="grid grid-cols-6 gap-6 sm:grid-cols-2 xs:grid-cols-1">
           {results.map((list, index) => (
             <li key={index} className="flex flex-col p-2 object-cover gap-2">
               <img src={list.poster} alt="can't load" className="rounded-lg" />
